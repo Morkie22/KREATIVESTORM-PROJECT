@@ -26,6 +26,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Roboto';
 }
 
 .header {
@@ -44,7 +45,6 @@ nav {
 #logo {
     font-size: 24px;
     color: #F9FAF8;
-    font-family: 'Roboto';
     font-weight: bold;
     text-decoration: none;
 }
@@ -70,7 +70,6 @@ nav {
 .nav-links ul li a {
     color: #E5E7EB;
     text-decoration: none;
-    font-family: 'Roboto';
     font-size: 18px;
 }
 
@@ -104,30 +103,27 @@ nav {
 
 .hero div h1 {
     color: #F9FAF8;
-    font-family: 'Roboto';
     font-size: 48px;
     font-weight: 900;
 }
 
 .hero div p {
     color: #E5E7EB;
-    font-family: 'Roboto';
     font-size: 18px;
     padding-right: 20%;
 }
 
 .hero div a {
-    cursor: pointer;
-    border: 0;
-    border-radius: 10px;
-    font-family: 'Roboto';
-    font-weight: bold;
+    display: inline-block;
     text-decoration: none;
-    text-align: center;
-    margin: 0 10px;
-    width: 200px;
-    padding: 10px 0;
-    transition: 0.4s;
     color: #E5E7EB;
+    border: 0;
+    padding: 12px 34px;
+    font-size: 18px;
     background-color: #3882f6;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    width: 200px;
 }
