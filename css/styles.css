@@ -126,4 +126,20 @@ nav {
     font-weight: bold;
     text-align: center;
     width: 200px;
+    transition: 0.3s;
+}
+
+.hero div a:hover {
+    box-shadow: 10px 5px 5px black;
+    color: #3882f6;
+    background-color: #E5E7EB;
+    transform: scale(1.05);
+}
+
+.hero div a:active {
+    box-shadow: 10px 5px 5px black;
+    color: #3882f6;
+    background-color: #E5E7EB;
+    transform: scale(1) translateY(5px);
+    
 }
