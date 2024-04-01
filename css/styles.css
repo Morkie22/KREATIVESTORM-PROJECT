@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Black.ttf) format('truetype');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Bold.ttf) format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Regular.ttf) format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-LightItalic.ttf) format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+
+.header {
+    min-height: 46vh;
+    width: 100%;
+    background-color: #1F2937;
+}
+
+nav {
+    display: flex;
+    padding: 2% 15%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    font-size: 24px;
+    color: #F9FAF8;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+
+}
+
+.nav-links ul {
+    cursor: default;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-links ul li a {
+    color: #E5E7EB;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #3882f6;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.hero {
+    display: flex;
+    padding: 2% 15%;
+    justify-content: space-between;
+    align-items: center;
+    align-items: stretch;
+}
+
+.hero div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.hero div h1 {
+    color: #F9FAF8;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.hero div p {
+    color: #E5E7EB;
+    font-size: 18px;
+    padding-right: 20%;
+}
+
+.hero div a {
+    display: inline-block;
+    text-decoration: none;
+    color: #E5E7EB;
+    border: 0;
+    padding: 12px 34px;
+    font-size: 18px;
+    background-color: #3882f6;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    width: 200px;
+}
