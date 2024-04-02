@@ -143,3 +143,49 @@ nav {
     transform: scale(1) translateY(5px);
     
 }
+
+/* Info section styles */
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-wrap: wrap;
+  }
+  
+  .info h3 {
+    margin-top: 0;
+    width: 100%;
+    text-align: center; 
+    font-size: 36px; 
+    font-weight: 800; 
+  }
+  
+  .info-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width: 150px;
+  }
+  
+  .image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid blue; /* Adds a blue border around the image */
+    border-radius: 10px; /* Adds rounded edges */
+    width: 100px; /* Adjusts to fit the image size */
+    height: 100px;
+    margin-bottom: 10px; /* Space between the image wrapper and subtext */
+  }
+  
+  .info-box img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .info-subtext {
+    text-align: center;
+    font-size: 14px; /* Adjust as needed */
+  }
