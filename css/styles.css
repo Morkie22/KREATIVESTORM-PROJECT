@@ -188,6 +188,7 @@ nav {
 
 .quoteAuthor {
     text-align: right;
+    color: #1f2937;
 }
 
 .boldEl {
@@ -223,4 +224,10 @@ button {
     padding: 8px 30px;
     margin: 10px 0 10px 10px;
     cursor: pointer;
+}
+
+button:hover {
+    background-color: #E5E7EB;
+    color: #3882f6;
+    border: 2px solid #3882f6;
 }
