@@ -156,8 +156,6 @@ nav {
     animation: transitionOnLoad 1s;
     width: fit-content;
 }
-
-
 @keyframes transitionOnLoad {
     from {
         opacity: 0;
