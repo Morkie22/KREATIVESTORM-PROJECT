@@ -163,7 +163,7 @@ nav {
 
 .hero img {
     border-radius: 20px;
-    animation: transitionOnLoad 1s;lk
+    animation: transitionOnLoad 1s;
     width: fit-content;
 }
 
@@ -178,48 +178,6 @@ nav {
     }
 }
 
-@media screen and (max-width: 768px) {
-    .hero {
-        flex-wrap: wrap;
-        padding: 2% 5%;
-    }
-    
-    .hero div {
-        align-items: center;
-    }
-
-    .hero div h1 {
-        margin-top: 5%;
-        font-size: 36px;
-        text-align: center;
-    }
-
-    .hero div p {
-        font-size: 16px;
-        line-height: 32px;
-        padding: 0% 5%;
-        margin-top: 5%;
-    }
-
-    .hero div a {
-        margin-top: 5%;
-        padding: 12px 34px;
-        font-size: 16px;
-        width: 100px;
-    }
-
-    .hero img {
-        width: 100%;
-        padding: 5% 0px;
-        border-radius: 50px;
-     }
-
-    footer {
-        flex-direction: column;
-        justify-content: center;
-    }
-
-}
 /* Info section styles */
 .info {
     display: flex;
@@ -351,11 +309,11 @@ button:active {
 footer {
     background: #1f2937;
     color: #E5E7EB;
-    padding: 3rem;
+    padding: 20px 0px;
     margin-top: auto;
     display: flex;
     justify-content: space-around;
-    align-items: stretch;
+    align-items: center;
     width: 100%;
 }
 
@@ -388,4 +346,47 @@ footer div a:active {
     box-shadow: 10px 5px 5px black;
     transform: scale(1) translateY(5px);
     
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        flex-wrap: wrap;
+        padding: 2% 5%;
+    }
+    
+    .hero div {
+        align-items: center;
+    }
+
+    .hero div h1 {
+        margin-top: 5%;
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .hero div p {
+        font-size: 16px;
+        line-height: 32px;
+        padding: 0% 5%;
+        margin-top: 5%;
+    }
+
+    .hero div a {
+        margin-top: 5%;
+        padding: 12px 34px;
+        font-size: 16px;
+        width: 100px;
+    }
+
+    .hero img {
+        width: 100%;
+        padding: 5% 0px;
+        border-radius: 50px;
+     }
+
+    footer {
+        flex-direction: column;
+        justify-content: center;
+    }
+
 }
