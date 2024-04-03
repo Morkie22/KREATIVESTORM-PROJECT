@@ -29,6 +29,16 @@
     font-family: 'Roboto';
 }
 
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 header {
     top: 0;
     width: 100%;
@@ -204,6 +214,11 @@ nav {
         border-radius: 50px;
      }
 
+    footer {
+        flex-direction: column;
+        justify-content: center;
+    }
+
 }
 /* Info section styles */
 .info {
@@ -301,4 +316,46 @@ button {
     padding: 8px 30px;
     margin: 10px 0 10px 10px;
     cursor: pointer;
+}
+
+footer {
+    background: #1f2937;
+    color: #E5E7EB;
+    padding: 3rem;
+    margin-top: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    width: 100%;
+}
+
+footer p {
+    display: flex;
+    align-items: center;
+}
+
+footer div a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    background-color: #3882f6;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+footer div a i{
+    font-size: 32px;
+    color: #e5e7eb;
+}
+
+footer div a:hover {
+    box-shadow: 10px 5px 5px black;
+    transform: scale(1.05);
+}
+
+footer div a:active {
+    box-shadow: 10px 5px 5px black;
+    transform: scale(1) translateY(5px);
+    
 }
