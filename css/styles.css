@@ -252,7 +252,6 @@ nav {
 }
 
 .boldEl {
-    font-weight: bold;
     font-weight: 900;
     margin-bottom: 5px;
 }
@@ -475,4 +474,13 @@ footer div a:active {
         justify-content: center;
     }
 
+    .sectionFour {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .ctaContainer {
+        padding-right: 0;
+    }
 }
