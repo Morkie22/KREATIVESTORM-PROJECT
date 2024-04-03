@@ -153,9 +153,10 @@ nav {
 
 .hero img {
     border-radius: 20px;
-    animation: transitionOnLoad 1s;lk
+    animation: transitionOnLoad 1s;
     width: fit-content;
 }
+
 
 @keyframes transitionOnLoad {
     from {
