@@ -153,7 +153,7 @@ nav {
 
 .hero img {
     border-radius: 20px;
-    animation: transitionOnLoad 1s;
+    animation: transitionOnLoad 1s;lk
     width: fit-content;
 }
 
@@ -271,6 +271,7 @@ nav {
 
 .quoteAuthor {
     text-align: right;
+    color: #1f2937;
 }
 
 .boldEl {
@@ -306,7 +307,23 @@ button {
     padding: 8px 30px;
     margin: 10px 0 10px 10px;
     cursor: pointer;
+    transition: 0.3s;
 }
+
+button:hover {
+    box-shadow: 10px 5px 5px black;
+    color: #3882f6;
+    background-color: #E5E7EB;
+    transform: scale(1.05);
+}
+
+button:active {
+    box-shadow: 10px 5px 5px black;
+    color: #3882f6;
+    background-color: #E5E7EB;
+    transform: scale(1) translateY(5px);
+}
+
 @media only screen and (max-width: 600px) {
   }
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
