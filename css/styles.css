@@ -60,6 +60,11 @@ header {
     margin-left: 10px;
 }
 
+#logo img {
+    object-fit: contain;
+    height: 48px;
+}
+
 .side-menu {
     display: none;
 }
@@ -380,6 +385,12 @@ footer div a:active {
 
     #logo {
         height: 82px;
+    }
+
+    #logo img {
+        object-fit: contain;
+        height: 62px;
+        margin-top:10px;
     }
     
     .hamb{
