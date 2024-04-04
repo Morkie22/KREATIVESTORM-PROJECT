@@ -190,12 +190,18 @@ nav {
     flex-wrap: wrap;
   }
   
-  .info h3 {
-    margin-top: 0;
-    width: 100%;
-    text-align: center; 
-    font-size: 36px; 
-    font-weight: 800; 
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  @keyframes blinkCaret {
+    50% { border-color: transparent; }
   }
   
   .info-box {
@@ -203,36 +209,60 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 10px;
-    width: 150px;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for background color and box shadow */
-  }
-  
-  .info-box:hover {
-    background-color: #f0f0f0; /* Light grey background on hover */
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Shadow effect for depth */
+    margin: 20px; 
+    width: 200px; 
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 2s ease-out forwards; 
   }
   
   .image-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid blue; 
-    border-radius: 10px; 
-    width: 100px; 
-    margin-bottom: 10px; 
+    border: 2px solid blue;
+    border-radius: 20px; 
+    width: 150px; 
+    height: 150px;
+    margin-bottom: 10px;
   }
   
   .info-box img {
-    width: 100px;
-    height: 100px;
+    width: 140px; 
+    height: 140px; 
   }
   
   .info-subtext {
     text-align: center;
-    font-size: 14px; 
+    font-size: 14px bold;
+    overflow: hidden; 
+    border-right: .1em solid black; 
+    white-space: nowrap; 
+    width: 0; 
+    animation: typing 3s steps(40, end), blinkCaret .75s step-end infinite; 
+    animation-fill-mode: forwards; 
   }
   
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .hero div h1 {
+      font-size: 32px; 
+    }
+}
+    .hero div p {
+      font-size: 16px; 
+      padding-right: 10%;
+  
+    .nav-links li a {
+      font-size: 16px; 
+    }
+  
+    .info-box {
+      width: 120px;
+    }
+
+    .sectionThree, .sectionFour {
+      padding: 10% 15%; 
+    }
+  }    
 /*section three and four*/  
 .sectionThree{
     background-color: #e5e7eb;
@@ -299,15 +329,6 @@ button:active {
     background-color: #E5E7EB;
     transform: scale(1) translateY(5px);
 }
-
-@media only screen and (max-width: 600px) {
-  }
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-
-  }
-@media only screen and (min-width: 1025px) {
-  }
-
 
 footer {
     background: #1f2937;
