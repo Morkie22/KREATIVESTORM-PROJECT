@@ -262,28 +262,7 @@ nav {
     .sectionThree, .sectionFour {
       padding: 10% 15%; 
     }
-  }
-  @media only screen and (max-width: 600px) {
-    .hero div h1 {
-      font-size: 24px; 
-    }
-  
-    .hero div p {
-      font-size: 14px; 
-      padding-right: 5%; 
-    }
-  
-    nav, .nav-links li a {
-      font-size: 14px; 
-    } 
-    .info-box {
-      width: 100%; 
-      margin: 10px 0;
-    }
-    .sectionThree, .sectionFour {
-      padding: 5%;
-    }
-  }     
+  }    
 /*section three and four*/  
 .sectionThree{
     background-color: #e5e7eb;
