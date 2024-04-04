@@ -134,55 +134,64 @@ nav ul li a:hover, .button-like:hover {
   cursor: pointer;
 }
 
-.info {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
+  .info {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-wrap: wrap;
+  }
 
-.info-box {
-  border: 1px solid #000000;
-  background-color: #FFFFFF;
-  padding: 20px;
-  margin: 20px;
-  width: 150px;
-  height: 150px; 
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  animation: fadeIn 2s ease-out forwards;
-  border-radius: 20px; 
-  cursor: pointer; 
-}
-.info-box:hover {
-  background-color: #F0F0F0;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
-  transform: translateY(-5px);
-  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease; /* Smooth transition for moving up */
-}
+  .info-box {
+    border: 1px solid #000000;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    width: 200px;
+    height: 300px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 2s ease-out forwards;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  .info-box:hover {
+    background-color: #F0F0F0; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2); 
+  }
 
-.image-wrapper {
-  border: 2px solid blue;
-  border-radius: 50%; 
-  width: 150px;
-  height: 150px;
-  margin-bottom: 10px;
-}
+  .image-wrapper {
+    border: 2px solid blue;
+    border-radius: 50%; /* Fully rounded edges for images */
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
 
-.info-box img, .info-subtext {
-  border-radius: 50%; 
-  font-size: 14px;
-  font-weight: bold;
-  overflow: hidden;
-  animation: typing 3s steps(40, end), blinkCaret .75s step-end infinite;
-  animation-fill-mode: forwards;
-}
+  /* Image Styling */
+  .info-box img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%; /* Fully rounded images */
+  }
 
-.info-subtext {
-  border-right: .1em solid black;
-  white-space: nowrap;
-  width: 0;
-  text-align: center;
-}
+  /* Subtext Styling */
+  .info-subtext {
+    font-size: 14px;
+    font-weight: bold; /* Corrected to valid CSS for bold text */
+    overflow: hidden;
+    border-right: .1em solid black;
+    white-space: nowrap;
+    width: 0;
+    animation: typing 3s steps(40, end), blinkCaret .75s step-end infinite;
+    animation-fill-mode: forwards;
+    text-align: center;
+  }
 
 @media screen and (max-width: 768px) {
   header, .nav-links li, .hero, .info-section, .quote, .call-to-action, footer {
