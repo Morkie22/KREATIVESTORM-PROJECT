@@ -468,7 +468,8 @@ footer div a:active {
     }
     
     .hero {
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
         padding: 2% 5%;
     }
     
@@ -497,9 +498,8 @@ footer div a:active {
     }
 
     .hero img {
-        width: 100%;
         padding: 5% 0px;
-        border-radius: 50px;
+        max-height: 200px;
      }
 
     footer {
