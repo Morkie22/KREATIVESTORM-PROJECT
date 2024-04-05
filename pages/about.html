@@ -1,88 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <title>About</title>
-  <link rel="stylesheet" href="about.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front End - Program Syllabus</title>
+    <link rel="stylesheet" href="../css/about.css">
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer"
+    >
 </head>
-
 <body>
-  <header>
-    <div class="logo">
-      <a href="index.html">
-        <img src="../images/logo.jpg" alt="Company Logo">
-      </a>
-    </div>
-    <nav>
-      <a href="../index.html" class="button-like">Back to Main Page</a>
-    </nav>
-  </header>
-
-  <main>
-    <section class="hero">
-      <h1>About</h1>
-      <p>
-        Kreativstorm is dedicated to enhancing business performance and efficiency through innovative solutions,
-        leveraging the vast resources and expertise of the Yes Network Group, LLC. With a human-centered approach, our
-        team of diverse experts aims to foster long-term client relationships and support businesses in achieving their
-        full potential.
-      </p>
-      <div class="hero-image">
-        <img src="/images/front web.jpg" class="hero-img">
-      </div>
+    <header>
+        <a href="../index.html" id="logo"><img src="../images/logo-transparent.png" alt="Kreativstorm logo"></a>
+        <input class="side-menu" type="checkbox" id="side-menu"/>
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="./syllabus.html">Syllabus</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="#">THREE</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="cards-section">
+        <h2 class="section-title">Services that we offer</h2>
+        <div class="cards-container">
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="../images/advisory.png" alt="Card Image 1" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">Dynamic & innovative management-consulting firm</h3>
+                    <p class="card-text">We are committed to delivering innovative solutions <br> that optimize processes, increase efficiency, <br> and enhance overall performance.</p>
+                    <div class="hidden-content">More details here...</div>
+                    <a href="https://www.kreativstorm.de" class="card-btn">Read More</a>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="card">
+                <img src="../images/consulting.png" alt="Card Image 1" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">Help businesses of all sizes</h3>
+                    <p class="card-text">We believe that every business has the potential to make a difference, <br>and we are committed to helping them achieve their<br> full potential.</p>
+                    <div class="hidden-content">More details here...</div>
+                    <a href="#" class="card-btn">Read More</a>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="card">
+                <img src="../images/legal.jpeg" alt="Card Image 1" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">Part of the global network Yes Network Group, LLC</h3>
+                    <div class="hidden-content">More details here...</div>
+                    <p class="card-text">As a proud member of the esteemed US holding company founded in 2015, Kreativstorm benefits from an abun-dance of resources and <br> unparalleled expertise, empowering us to excel and thrive <br> in our domain.</p>
+                    <a href="#" class="card-btn">Read More</a>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="card">
+                <img src="../images/taxes.png" alt="Card Image 1" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">Human-centered approach to consulting</h3>
+                    <p class="card-text">We are committed to building long-term relationships <br> with our clients based on mutual respect and trust.</p>
+                    <div class="hidden-content">More details here...</div>
+                    <a href="#" class="card-btn">Read More</a>
+                </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="card">
+                <img src="../images/audit2.png" alt="Card Image 1" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">Experts in a wide range of fields</h3>
+                    <p class="card-text">Our team includes experts from busi-ness<br> and finance to technology and engineering.</p>
+                    <div class="hidden-content">More details here...</div>
+                    <a href="#" class="card-btn">Read More</a>
+                </div>
+            </div>
+        </div>
     </section>
-    <section class="company-overview">
-      <h1>Dynamic & Innovative Management-Consulting Firm</h1>
-      <p>Kreativstorm leverages the Yes Network Group, LLC's resources to offer innovative solutions for business growth
-        and efficiency. Our expert team emphasizes a human-centered approach to foster lasting client relationships.
-      </p>
-    </section>
-
-    <section class="info-section">
-      <h2>What We're About</h2>
-      <div class="info-boxes">
-        <article class="info-box">
-          <h3>Engage in Challenges</h3>
-          <p>Participate in Coding Challenges and Hackathons to sharpen your skills and innovate alongside peers.</p>
-        </article>
-        <article class="info-box">
-          <h3>Community Learning</h3>
-          <p>Learn from the Community and Contribute to open-source projects to gain experience and give back.</p>
-        </article>
-        <article class="info-box">
-          <h3>Master Tools</h3>
-          <p>Master Version Control Systems like Git to enhance workflow efficiency and collaboration.</p>
-        </article>
-        <article class="info-box">
-          <h3>Stay Current</h3>
-          <p>Stay Updated with Latest Technologies to remain competitive and innovative in a fast-paced industry.</p>
-        </article>
-        <article class="info-box">
-          <h3>Iterative Feedback</h3>
-          <p>Seek Feedback and Iterate on your projects to achieve excellence and continuous improvement.</p>
-        </article>
-      </div>
-    </section>
-    <section class="quote">
-      <blockquote>
-        "Becoming the best developer isn't just about mastering the code; it's about persistently pushing the boundaries
-        of what is possible, embracing continuous learning, and transforming every failure into a stepping stone towards
-        innovation...."
-        <footer>- Wisdom</footer>
-      </blockquote>
-    </section>
-
-    <section class="sectionFour">
-      <div class="ctaContainer">
-          <p class="boldEl">Call to action! It's time!</p>
-          <p>Dont hesitate and contact us right away!</p>
-      </div>
-  </section>
-  <footer>
-    <p>Contact us at <a href="mailto:kreativestorm@kreativestorm.com">kreativestorm@kreativestorm.com</a></p>
-    <p>© 2024 Kreativestorm Students. Inc.</p>
-  </footer>
-  
-     
+    <footer>
+        <div class="social-media-links">
+            <a href="https://www.facebook.com/kreativstormde/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/company/kreativstorm/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://twitter.com/Kreativstorm" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <p>© 2024 Kreativestorm Students. Inc.</p>
+    </footer> 
+</body>
 </html>
