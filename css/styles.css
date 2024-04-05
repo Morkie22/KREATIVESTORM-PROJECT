@@ -286,7 +286,19 @@ p.author {
     text-decoration: none; 
     font-weight: 900;
     font-size: 20px;
- }
+}
+
+.avatar {
+    display: flex;
+    justify-content: right;
+}
+
+.imgAvatar {
+    border-radius: 50%;
+    width: 50px;
+    margin-right: 5px;;
+    height: auto;
+}
 
 .boldEl {
     font-weight: 900;
@@ -316,17 +328,17 @@ p.author {
 }
 
 .slider-container .slider .mask article.text01 {
-    animation: cycle1 8s ease-in-out infinite;
+    animation: cycle1 15s ease-in-out infinite;
     z-index: 1;
 }
 
 .slider-container .slider .mask article.text02 {
-    animation: cycle2 8s ease-in-out infinite;
+    animation: cycle2 15s ease-in-out infinite;
     z-index: 2;
 }
 
 .slider-container .slider .mask article.text03 {
-    animation: cycle3 8s ease-in-out infinite;
+    animation: cycle3 15s ease-in-out infinite;
     z-index: 3;
 }
 
@@ -402,6 +414,7 @@ p.author {
     }
 }
 
+
 .sectionFour {
     display: flex;
     justify-content: space-between;
@@ -418,21 +431,23 @@ p.author {
     padding: 12px 34px 12px 0;
 }
 
-button {
+.signupBtn {
     background-color: #3882f6;
     color: #E5E7EB;
+    text-align: center;
+    text-decoration: none;
     font-size: 18px;
     font-weight: bold;
     width: 200px;
     border: 2px solid #E5E7EB;
     border-radius: 10px;
-    padding: 8px 30px;
+    padding: 10px 30px 8px 30px;
     margin: 10px 0 10px 10px;
     cursor: pointer;
     transition: 0.3s;
 }
 
-button:hover {
+.signupBtn:hover {
     box-shadow: 10px 5px 5px black;
     color: #3882f6;
     background-color: #E5E7EB;

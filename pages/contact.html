@@ -27,28 +27,45 @@
         </nav>
     </header>
     <main>
-        <h1>Contact us</h1>
         <div class="container">
-            <div class="subContainer">
-                <h3>Address</h3>
-                <p>Friedrichstraße 114a, Berlin, BE 10117, DE</p>
-            </div>
-            <div class="subContainer">
-                <h3>Contact</h3>
-                <p>Email: <a href="mailto:contact@kreativstorm.de" class="email">contact@kreativstorm.de</a>
-                    <br>
-                    Phone: +49 211 36870044
-                </p>
-            </div>
-            <div class="subContainer">
-                <h3>Working Hours</h3>
-                <p>Mon - Fri 8:30 am – 6:00 pm
-                    <br>
-                    Sat 9:00 am – 3:00 pm
-                    <br>
-                    Sun Closed
-                </p>
-            </div>
+            <section>
+                <div class="infoContainer">
+                    <div class="subContainer">
+                        <h3>Address</h3>
+                        <p>Friedrichstraße 114a, Berlin, BE 10117, DE</p>
+                    </div>
+                    <div class="subContainer">
+                        <h3>Contact</h3>
+                        <p>Email: <a href="mailto:contact@kreativstorm.de" class="email">contact@kreativstorm.de</a>
+                            <br>
+                            Phone: +49 211 36870044
+                        </p>
+                    </div>
+                    <div class="subContainer">
+                        <h3>Working Hours</h3>
+                        <p>Mon - Fri 8:30 am – 6:00 pm
+                            <br>
+                            Sat 9:00 am – 3:00 pm
+                            <br>
+                            Sun Closed
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="form">
+                <h2>Contact us</h2>
+                <form action="" method="post">
+                    <label>Name</label>
+                    <input type="text" name="name" placeholder="Your name" autocomplete="off">
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="Your email" autocomplete="off">
+                    <div class="textArea">
+                        <label>Message</label>
+                        <textarea name="message" cols="30" rows="10" placeholder="Type your message"></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
         </div>
         <iframe
             src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJa9BLpypRqEcRIYP0bhZtS7k&key=AIzaSyAR-ErBcibf96rdua18oD_1z3d3Se433-I">
