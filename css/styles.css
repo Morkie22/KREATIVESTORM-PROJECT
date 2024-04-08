@@ -282,22 +282,22 @@ p.author {
     height: 300px;
 }
 
-.slider-container .slider .mask article{
+.slider-container .slider .mask blockquote{
     position: absolute;
     top: -850px;
 }
 
-.slider-container .slider .mask article.text01 {
+.slider-container .slider .mask blockquote.text01 {
     animation: cycle1 15s ease-in-out infinite;
     z-index: 1;
 }
 
-.slider-container .slider .mask article.text02 {
+.slider-container .slider .mask blockquote.text02 {
     animation: cycle2 15s ease-in-out infinite;
     z-index: 2;
 }
 
-.slider-container .slider .mask article.text03 {
+.slider-container .slider .mask blockquote.text03 {
     animation: cycle3 15s ease-in-out infinite;
     z-index: 3;
 }
