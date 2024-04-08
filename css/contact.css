@@ -354,17 +354,26 @@ footer div a:active {
         justify-content: center;
     }
 
-    body {
-        /* background-size: auto; */
+    .container {
+        flex-direction: column;
+        margin: 10px 0;
+    }
 
+    .infoContainer {
+        margin: 10px 0;
     }
 
     .form {
         margin: 10px 0;
     } 
 
-    .container {
-        flex-direction: column;
+    input {
+        width: 352px;
+    }
+
+    button {
+        margin: 20px 80px;
+        text-align: center;
     }
 
     .iframe {
