@@ -1,41 +1,117 @@
-/* Reset CSS */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@font-face {
+  font-family: 'Roboto';
+  src: url(../fonts/Roboto-Black.ttf) format('truetype');
+  font-weight: 900;
 }
 
-/* Global styles */
+@font-face {
+  font-family: 'Roboto';
+  src: url(../fonts/Roboto-Bold.ttf) format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(../fonts/Roboto-Regular.ttf) format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(../fonts/Roboto-LightItalic.ttf) format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto';
+}
+
+html {
+  height: 100%;
+}
+
 body {
-    font-family: 'Roboto', sans-serif;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #E5E7EB;
+  background-image: url("../images/syllabus-hero-bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 header {
-    background-color: #1F2937;
-    color: #FFFFFF;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+  top: 0;
+  width: 100%;
+  background-color: #1F2937;
+  box-shadow: 1px 1px 5px 0px black;
+  position: sticky;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.logo img {
-    height: 48px;
+#logo {
+  font-size: 24px;
+  color: #F9FAF8;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 10px;
 }
 
-nav a {
-    color: #FFFFFF;
-    text-decoration: none;
-    font-size: 18px;
-    margin-right: 20px;
-    transition: color 0.3s;
+#logo img {
+  object-fit: contain;
+  height: 48px;
 }
 
-nav a:hover {
-    color: #FFD700;
+.side-menu {
+  display: none;
+}
+
+nav {
+  display: flex;
+  padding: 2% 15%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+  cursor: default;
+}
+
+.nav-links li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+  cursor: pointer;
+}
+
+.nav-links li a {
+  color: #E5E7EB;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-links li::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #3882f6;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links li:hover::after {
+  width: 100%;
 }
 
 main {
@@ -226,76 +302,139 @@ nav {
     width: 100%;
 }
 
+footer {
+  background: #1f2937;
+  color: #E5E7EB;
+  padding: 20px 0px;
+  margin-top: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+footer p {
+  display: flex;
+  align-items: center;
+}
+
+footer div a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px;
+  background-color: #3882f6;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+footer div a i{
+  font-size: 32px;
+  color: #e5e7eb;
+}
+
+footer div a:hover {
+  box-shadow: 10px 5px 5px black;
+  transform: scale(1.05);
+}
+
+footer div a:active {
+  box-shadow: 10px 5px 5px black;
+  transform: scale(1) translateY(5px);
+  
+}
+
 @media screen and (max-width: 768px) {
-    .nav-links {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background-color: #1F2937;
-        width: 100%;
-        flex-direction: column;
-        padding: 10px 0;
-    }
+  header {
+      display: block;
+  }
 
-    .nav-links.active {
-        display: flex;
-    }
+  #logo {
+      height: 82px;
+  }
 
-    .nav-links li {
-        margin-right: 0;
-        text-align: center;
-    }
+  #logo img {
+      object-fit: contain;
+      height: 62px;
+      margin-top:10px;
+  }
+  
+  .hamb{
+      cursor: pointer;
+      float: right;
+      padding: 40px 20px;
+  }
 
-    .nav-links a {
-        display: block;
-        padding: 10px 0;
-    }
+  .hamb-line {
+      background: #e5e7eb;
+      display: block;
+      height: 2px;
+      position: relative;
+      width: 24px;
+  
+  }
 
-    .hamb {
-        display: block;
-        cursor: pointer;
-        position: relative;
-    }
+  .hamb-line::before,
+  .hamb-line::after{
+      background: #e5e7eb;
+      content: '';
+      display: block;
+      height: 100%;
+      position: absolute;
+      transition: all .2s ease-out;
+      width: 100%;
+  }
 
-    .hamb-line {
-        background-color: #FFFFFF;
-        display: block;
-        height: 2px;
-        position: relative;
-        width: 24px;
-        transition: transform 0.3s;
-    }
+  .hamb-line::before{
+      top: 5px;
+  }
 
-    .hamb-line::before,
-    .hamb-line::after {
-        background-color: #FFFFFF;
-        content: '';
-        display: block;
-        height: 100%;
-        position: absolute;
-        transition: transform 0.3s;
-        width: 100%;
-    }
+  .hamb-line::after{
+      top: -5px;
+  }
+  
+  /* Toggle menu icon */
+  .side-menu:checked ~ nav{
+      max-height: 100%;
+  }
 
-    .hamb-line::before {
-        top: 8px;
-    }
+  .side-menu:checked ~ .hamb .hamb-line {
+      background: transparent;
+  }
 
-    .hamb-line::after {
-        top: -8px;
-    }
+  .side-menu:checked ~ .hamb .hamb-line::before {
+      transform: rotate(-45deg);
+      top:0;
+  }
+  
+  .side-menu:checked ~ .hamb .hamb-line::after {
+      transform: rotate(45deg);
+      top:0;
+  }
 
-    /* Rotate lines to form X */
-    .side-menu:checked ~ .hamb .hamb-line {
-        transform: rotate(45deg);
-    }
+  nav {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height .5s ease-out;
+      display: block;
+      padding: 0px;
+      background-color: #1F2937;
+  }
 
-    .side-menu:checked ~ .hamb .hamb-line::before {
-        transform: rotate(90deg) translate(8px, -8px);
-    }
+  .nav-links li {
+      display: block;
+  }
 
-    .side-menu:checked ~ .hamb .hamb-line::after {
-        transform: rotate(90deg) translate(8px, 8px);
-    }
+  .nav-links a {
+      display: block;
+      padding: 30px;
+  }
+
+  footer {
+      flex-direction: column;
+      justify-content: center;
+  }
 }
