@@ -21,30 +21,23 @@ header {
     top: 0;
     z-index: 1000;
 }
-<<<<<<< HEAD
-header nav a {
-=======
 
 .logo img {
     height: 48px;
 }
 
 nav a {
->>>>>>> natalyBG
     color: #FFFFFF;
     text-decoration: none;
     font-size: 18px;
     margin-right: 20px;
-    transition: color 0.3s ease;
-}
-
-header nav a:hover {
-    color: #FFD700;
+    transition: color 0.3s;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #FFD700;
 }
+
 main {
     padding: 20px;
     background-image: url('../images/syllabus-hero-bg.jpg');
@@ -52,24 +45,27 @@ main {
     background-position: center;
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
 }
+
 h2 {
     text-align: center;
     margin-bottom: 30px;
     font-size: 36px;
-    transition: transform 0.3s ease, color 0.3s ease; 
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 h2:hover {
-    color: gray; 
-    transform: scale(1.1); 
+    color: gray;
+    transform: scale(1.1);
 }
+
 .image-container {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
 }
+
 figure {
     position: relative;
     width: 200px;
@@ -77,11 +73,13 @@ figure {
     overflow: hidden;
     border-radius: 10px;
     transition: transform 0.3s ease;
-    margin-right: 10px; 
+    margin-right: 10px;
 }
+
 figure:last-child {
-    margin-right: 0; 
+    margin-right: 0;
 }
+
 figure:hover {
     transform: scale(1.05);
 }
@@ -103,59 +101,49 @@ figcaption {
     font-size: 16px;
     text-align: center;
 }
+
 .quote-section {
-    background-color: #f0f0f0; 
-    padding: 40px 20px; 
-    border-radius: 10px; 
+    background-color: #f0f0f0;
+    padding: 40px 20px;
+    border-radius: 10px;
     margin-bottom: 30px;
 }
+
 blockquote {
     font-style: italic;
     font-size: 20px;
     margin-bottom: 10px;
 }
 
-<<<<<<< HEAD
-h1, h2, h3, h4, h5, h6 {
-    font-weight: bold;
-    font-size: 36px; /* Set font size to 36px */
-=======
 cite {
     font-size: 18px;
     color: #888888;
 }
-.mission-section {
-    background-color: #FFFFFF; 
-    padding: 40px 20px; 
-    border-radius: 10px; 
-    margin-bottom: 30px; 
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
-    align-items: center;
-}
-.mission-section h3 {
-    font-size: 24px; 
-    font-weight: 800; 
-}
 
-.mission-section p {
-    font-size: 18px; 
-    line-height: 1.6; 
-}
-.asidepart {
-    flex: 1;
-    margin-right: 20px;
+.mission-section {
+    background-color: #FFFFFF;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    align-items: center;
 }
 
 .mission-section h3 {
     font-size: 24px;
+    font-weight: 800;
     margin-bottom: 10px;
 }
 
 .mission-section p {
     font-size: 18px;
-    font-weight: 600; 
+    font-weight: 600;
     margin-bottom: 20px;
->>>>>>> natalyBG
+}
+
+.asidepart {
+    flex: 1;
+    margin-right: 20px;
 }
 
 button {
@@ -163,21 +151,27 @@ button {
     font-size: 18px;
     font-weight: 800;
     background-color: transparent;
-    color: #3882f6; 
+    color: #3882f6;
     border: none;
     border-radius: 0;
     cursor: pointer;
     transition: color 0.3s;
 }
+
 button:hover {
-    color: #1c6de8; 
-    text-decoration: underline; 
+    color: #1c6de8;
+    text-decoration: underline;
 }
+
 footer {
     background-color: #1F2937;
     color: #FFFFFF;
     padding: 20px;
     text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
 
 .social-media-links a {
@@ -191,14 +185,7 @@ footer {
 
 nav {
     display: flex;
-<<<<<<< HEAD
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1200PX;
-    margin: 0 auto;
-=======
     align-items: center;
->>>>>>> natalyBG
 }
 
 .nav-links {
@@ -310,14 +297,4 @@ nav {
     .side-menu:checked ~ .hamb .hamb-line::after {
         transform: rotate(90deg) translate(8px, 8px);
     }
-}
-footer {
-    background-color: #1F2937; /* Background color for the footer */
-    color: #FFFFFF;
-    padding: 20px;
-    text-align: center;
-    width: 100%; /* Make the footer span the full width */
-    position: fixed; /* Fix the footer to the bottom of the viewport */
-    bottom: 0; /* Position the footer at the bottom of the viewport */
-    left: 0; /* Align the footer to the left */
 }
