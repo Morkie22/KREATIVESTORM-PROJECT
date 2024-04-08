@@ -264,7 +264,6 @@ p.author {
 
 .boldEl {
     font-weight: 900;
-    margin-bottom: 5px;
 }
 
 .slider-container {
@@ -388,9 +387,11 @@ p.author {
 }
 
 .ctaContainer {
-    border: none;
-    border-radius: 10px;
     padding: 12px 34px 12px 0;
+}
+
+.ctaContainer p {
+    margin-top: 10px;
 }
 
 .signupBtn {
