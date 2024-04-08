@@ -193,25 +193,26 @@ nav {
 h2 {
     text-align: center;
     font-size: 24px;
-    margin-top: 20px;
+    font-weight: 900;
+}
+
+.sectionTwo {
+    margin: 100px 50px;
 }
 
 .container {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 30px 0;
     padding: 20px;
 }
 
 figure {
-    position: relative;
-    width: 80px;
-    height: 80px;
-    background-color: #fff;
-    border: 2px solid #00f;
-    overflow: hidden;
+    margin: 5px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
     transition: transform 0.3s ease; /* Add transition for smooth hover effect */
 }
 
@@ -219,18 +220,23 @@ figure:hover {
     transform: scale(1.1); /* Scale up on hover */
 }
 
-img {
-    width: 100%;
-    height: 100%;
+figure img {
+    background-color: #fff;
+    border: 4px solid #3882f6;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    padding: 5px;
 }
 
 figcaption {
-    position: absolute;
-    bottom: -30px;
-    left: 0;
-    width: 100%;
+    color: #1f2937;
+    margin-top: 20px;
     text-align: center;
+    font-size: 20px;
+    font-weight: 900;
 }   
+
 /*section three and four*/  
 .sectionThree{
     background-color: #e5e7eb;
@@ -264,7 +270,6 @@ p.author {
 
 .boldEl {
     font-weight: 900;
-    margin-bottom: 5px;
 }
 
 .slider-container {
@@ -388,9 +393,11 @@ p.author {
 }
 
 .ctaContainer {
-    border: none;
-    border-radius: 10px;
     padding: 12px 34px 12px 0;
+}
+
+.ctaContainer p {
+    margin-top: 10px;
 }
 
 .signupBtn {
@@ -594,6 +601,12 @@ footer div a:active {
     footer {
         flex-direction: column;
         justify-content: center;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+  
     }
 
     .sectionThree {

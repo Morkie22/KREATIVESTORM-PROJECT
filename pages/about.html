@@ -5,19 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <link rel="stylesheet" href="../css/about.css">
+    <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer"
+>
 </head>
 <body>
     <header>
-        <div class="logo">
-            <a href="https://www.kreativstorm.de">
-                <img src="../images/logo-transparent.png" alt="logo-transparent">
-            </a>
-        </div>
+        <a href="../index.html" id="logo"><img src="../images/logo-transparent.png" alt=""></a>
+        <input class="side-menu" type="checkbox" id="side-menu"/>
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
         <nav>
-            <a href="../index.html">Home</a>
-            <a href="../pages/syllabus.html">Syllabus</a>
-            <a href="../pages/about.html">About</a>
-            <a href="../pages/contact.html">Contact Us</a>
+            <ul class="nav-links">
+                <li><a href="./syllabus.html">Syllabus</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
     <main>
@@ -61,6 +67,6 @@
             <a href="https://twitter.com/Kreativstorm" target="_blank"><i class="fa-brands fa-twitter"></i></a>
         </div>
         <p>© 2024 Kreativestorm Students. Inc.</p>
-    </footer>
+    </footer> 
 </body>
 </html>
